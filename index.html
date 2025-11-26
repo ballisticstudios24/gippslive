@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Gippsland's natural beauty, parks, and coastal regions with Gippsland Live.">
+  <title>Gippsland Live</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Gippsland Live</h1>
+
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <!-- Mobile Nav Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="links-submenu">
+          <span>Links ▾</span>
+          <ul class="submenu">
+            <li><a href="https://www.parks.vic.gov.au/places-to-see/parks/tarra-bulga-national-park" target="_blank">Tarra Bulga National Park</a></li>
+            <li><a href="https://www.visitvictoria.com/regions/gippsland/destinations/sale" target="_blank">Sale</a></li>
+            <li><a href="https://www.visitmelbourne.com/regions/gippsland/destinations/inverloch" target="_blank">Inverloch</a></li>
+            <li><a href="https://www.visitvictoria.com/regions/gippsland" target="_blank">Explore More</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Desktop Nav Menu -->
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-layout">
+    <aside class="sidebar" id="sidebar">
+      <h2>Explore Gippsland</h2>
+      <ul>
+        <li><a href="https://www.parks.vic.gov.au/places-to-see/parks/tarra-bulga-national-park" target="_blank">Tarra Bulga National Park</a></li>
+        <li><a href="https://www.visitvictoria.com/regions/gippsland/destinations/sale" target="_blank">Sale</a></li>
+        <li><a href="https://www.visitmelbourne.com/regions/gippsland/destinations/inverloch" target="_blank">Inverloch</a></li>
+        <li><a href="https://www.visitvictoria.com/regions/gippsland" target="_blank">Explore More</a></li>
+      </ul>
+    </aside>
+
+    <div class="main-content">
+      <div class="hero">
+        <picture>
+          <source media="(min-width: 1920px)" srcset="Herophoto/hero1920.jpg">
+          <source media="(min-width: 960px)" srcset="Herophoto/hero960.jpg">
+          <img src="Herophoto/hero480.jpg" alt="Scenic view of Gippsland coast">
+        </picture>
+      </div>
+
+      <section class="hero-text-below">
+        <h2>Welcome to Gippsland</h2>
+        <p>Discover the natural beauty and hidden gems of Gippsland through our gallery and visitor information.</p>
+      </section>
+
+      <section>
+        <h2>Why Visit Gippsland?</h2>
+        <p>Gippsland offers lush rainforests, scenic coastlines, heritage trails and welcoming communities. Whether you're into hiking, swimming, wildlife or photography, there's something here for everyone.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Robert Halaijian. Created as part of ICT30120 at Chisholm Institute.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('visible');
+    });
+  </script>
+</body>
+</html>
